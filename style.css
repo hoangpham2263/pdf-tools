@@ -247,3 +247,8 @@ h1 { font-weight: 600; }
 .mlist .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .mlist .meta { font-size: 12.5px; color: var(--muted); }
 .mlist .meta.warn { color: var(--warn); }
+
+/* Mobile: 16px form text so iOS does not zoom in on focus */
+@media (max-width: 640px) {
+  input, select, textarea { font-size: 16px !important; }
+}
